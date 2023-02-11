@@ -2,8 +2,11 @@ package models
 
 import "gorm.io/gorm"
 
-type Fact struct {
+type Entry struct {
 	gorm.Model
-	Question string `json:"question" gorm:"text;not null;default:null`
-	Answer   string `json:"answer" gorm:"text;not null;default:null`
+	ID       	uint              `json:"id" gorm:"primaryKey:autoIncrement;"`
+	Dish        string            `json:"dish"`
+	Fat         float64           `json:"fat"`
+	Ingredients string            `json:"ingredients"`
+	Calories    string            `json:"calories"`
 }
