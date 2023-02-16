@@ -8,7 +8,7 @@
 }
 
 .input:focus-within {
-  color: #57606b;
+  color: #e5e5e6;
 }
 
 .input.textArea {
@@ -46,11 +46,11 @@
   padding: 0 0.8em;
   border-radius: 0.45em;
   font-size: 1em;
-  color: #24292e;
-  background-color: transparent;
+  color: #e5e5e6;
+  background-color: #282834;
   outline: none;
   box-shadow: none;
-  border: #d0d7de 1px solid;
+  border: #4a495a 0.75px solid;
   transition: all ease 150ms;
 }
 
@@ -67,19 +67,30 @@
 }
 
 .input :is(input, textarea)::placeholder {
-  color: var(--input-placeholder-color);
+  color: #afb8c1;
 }
 
 .input :is(input, textarea):focus {
-  border-color: var(--input-focus-border-color);
+  border-color: #8c959f;
 }
 
 .input :is(input, textarea):focus::placeholder {
-  color: var(--input-placeholder-focus-color);
+  color: #4a495a;
 }
 
 .input :is(input, textarea):disabled {
-  background-color: var(--input-disabled-bg-color);
-  border-color: var(--input-disabled-border-color);
+  background-color: rgba(60, 60, 60, 0.5);
+  border-color: #32383f;
   cursor: not-allowed;
+}
+
+label.label {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 13px;
+  color: #5d5b6e;
+  text-align: left;
 }
