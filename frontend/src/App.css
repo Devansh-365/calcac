@@ -1,2 +1,79 @@
-main {
+.container {
+  position: relative;
+  background-color: #15141b;
+  height: 100vh;
+  padding: 5vh;
+  width: 100%;
+  font-size: 16px;
+  --std-padding: 1.25em;
+  --landscape-padding: 22vw;
+  --btn-bg: #fbd387;
+  --btn-color: #15141b;
+}
+
+.form {
+  position: relative;
+  display: flex;
+  display: block;
+  max-width: 56vw;
+  border-radius: 0.85rem;
+  border: 2px solid #afb8c1;
+  background-color: #15141b;
+  margin: 0 auto;
+}
+
+.form header h1 {
+  color: var(--gray-8);
+  font-size: 1.2em;
+  text-align: left;
+}
+
+.form fieldset input {
+  min-width: 250px;
+}
+
+.form footer {
+  position: relative;
+  max-width: 56vw;
+  width: 100%;
+  padding: 3vh var(--std-padding) var(--std-padding);
+  margin: auto;
+}
+
+.form button {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  cursor: pointer;
+  white-space: nowrap;
+  width: fit-content;
+  background-color: transparent;
+  gap: 8px;
+  padding: 10px 15px;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 400;
+  border-width: 0.5px;
+  border-style: solid;
+  font-family: var(--font-family);
+  color: var(--btn-color);
+  background-color: var(--btn-bg);
+  border-color: transparent;
+  transition: background ease 100ms, color ease 100ms, width ease-in 150ms,
+    transform ease-in 160ms;
+}
+
+.header {
+  position: relative;
+  color: #ffffff;
+  padding: 2vh var(--std-padding) var(--std-padding);
+}
+
+.body {
+  position: relative;
+  max-width: 100%;
+  padding: 5vh var(--std-padding) var(--std-padding);
 }
